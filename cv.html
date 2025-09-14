@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curriculum Vitae - Dedi Kundana</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Tambahan: Flag Icons untuk bendera 🇮🇩 / 🇬🇧 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css" />
+  <style>
+    html { scroll-behavior: smooth; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn { animation: fadeIn 1.2s ease-out forwards; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-[#800000] to-[#A52A2A] text-white py-10">
+    <div class="max-w-5xl mx-auto text-center relative">
+      <!-- Tombol Bahasa (dengan bendera visual) -->
+      <div class="absolute top-4 right-4 flex gap-2">
+        <button id="lang-id-header" class="px-3 py-1 bg-white text-red-800 rounded hover:bg-gray-200 flex items-center gap-2">
+          <span class="fi fi-id"></span> ID
+        </button>
+        <button id="lang-en-header" class="px-3 py-1 bg-white text-red-800 rounded hover:bg-gray-200 flex items-center gap-2">
+          <span class="fi fi-gb"></span> EN
+        </button>
+      </div>
+
+      <!-- Foto Profil -->
+      <img src="profile.jpg.jpg" alt="Foto Profil" 
+           class="mx-auto rounded-full border-4 border-white shadow-lg w-48 h-48 object-cover object-top 
+                  transition duration-500 ease-in-out opacity-0 animate-fadeIn hover:shadow-2xl hover:scale-105">
+
+      <h1 class="text-4xl font-bold mt-4"
+          data-id="Dedi Kundana, S.Pd., M.T.I"
+          data-en="Dedi Kundana, S.Pd., M.T.I">Dedi Kundana, S.Pd., M.T.I</h1>
+      <p class="text-lg mt-2"
+         data-id="Kepala Lembaga Pengembangan Teknologi Informasi & Komunikasi (LPTIK)"
+         data-en="Head of ICT Development Institute (LPTIK)">
+         Kepala Lembaga Pengembangan Teknologi Informasi & Komunikasi (LPTIK)
+      </p>
+      <p class="mt-1"
+         data-id="STIAB Jinarakkhita Lampung"
+         data-en="STIAB Jinarakkhita Lampung">
+         STIAB Jinarakkhita Lampung
+      </p>
+
+      <!-- Tombol Hubungi & Download -->
+      <div class="flex justify-center gap-4 mt-4">
+        <!-- DIUBAH: mailto -> wa.me (WhatsApp) -->
+        <a href="https://wa.me/6282186086014"
+           target="_blank" rel="noopener"
+           class="bg-white text-red-800 px-4 py-2 rounded-lg shadow hover:bg-gray-200"
+           data-id="Hubungi Saya" data-en="Contact Me">Hubungi Saya</a>
+
+        <a href="CV-Dedi-Kundana.pdf" download 
+           class="bg-transparent border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-red-800"
+           data-id="Download CV" data-en="Download CV">Download CV</a>
+      </div>
+
+      <!-- Navigasi -->
+      <nav class="mt-6">
+        <ul class="flex flex-wrap justify-center gap-6 text-sm font-medium">
+          <li><a href="#academic-id" class="hover:text-gray-200" data-id="Identitas" data-en="Identity">Identitas</a></li>
+          <li><a href="#tentang" class="hover:text-gray-200" data-id="Tentang" data-en="About">Tentang</a></li>
+          <li><a href="#pendidikan" class="hover:text-gray-200" data-id="Pendidikan" data-en="Education">Pendidikan</a></li>
+          <li><a href="#pengalaman" class="hover:text-gray-200" data-id="Pengalaman" data-en="Experience">Pengalaman</a></li>
+          <li><a href="#keahlian" class="hover:text-gray-200" data-id="Keahlian" data-en="Skills">Keahlian</a></li>
+          <li><a href="#penelitian" class="hover:text-gray-200" data-id="Penelitian" data-en="Research">Penelitian</a></li>
+          <li><a href="#kontak" class="hover:text-gray-200" data-id="Kontak" data-en="Contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Identitas Akademik -->
+  <section id="academic-id" class="max-w-5xl mx-auto py-10 px-4 bg-gray-100 rounded-lg mt-10">
+    <h2 class="text-xl font-bold text-red-800 mb-5 text-center"
+        data-id="Identitas Akademik" data-en="Academic Identity">Identitas Akademik</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="flex items-center bg-white shadow rounded-lg p-3">
+        <i data-lucide="id-card" class="w-6 h-6 text-red-800 mr-3"></i>
+        <div>
+          <p class="font-semibold">NIDN</p>
+          <p class="text-sm text-gray-700">2910039201</p>
+        </div>
+      </div>
+      <div class="flex items-center bg-white shadow rounded-lg p-3">
+        <i data-lucide="circle" class="w-6 h-6 text-green-600 mr-3"></i>
+        <div>
+          <p class="font-semibold">ORCID</p>
+          <a href="https://orcid.org/0009-0003-8326-9290" target="_blank" class="text-sm text-red-800 hover:underline">0009-0003-8326-9290</a>
+        </div>
+      </div>
+      <div class="flex items-center bg-white shadow rounded-lg p-3">
+        <i data-lucide="book" class="w-6 h-6 text-orange-600 mr-3"></i>
+        <div>
+          <p class="font-semibold">Scopus</p>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=59324501000" target="_blank" class="text-sm text-red-800 hover:underline">59324501000</a>
+        </div>
+      </div>
+      <div class="flex items-center bg-white shadow rounded-lg p-3">
+        <i data-lucide="graduation-cap" class="w-6 h-6 text-blue-600 mr-3"></i>
+        <div>
+          <p class="font-semibold">Google Scholar</p>
+          <a href="https://scholar.google.com" target="_blank" class="text-sm text-red-800 hover:underline" data-id="Profil Scholar" data-en="Scholar Profile">Profil Scholar</a>
+        </div>
+      </div>
+      <div class="flex items-center bg-white shadow rounded-lg p-3 md:col-span-2">
+        <i data-lucide="star" class="w-6 h-6 text-yellow-500 mr-3"></i>
+        <div>
+          <p class="font-semibold">Sinta</p>
+          <a href="https://sinta.kemdikbud.go.id/authors/profile/6854516" target="_blank" class="text-sm text-red-800 hover:underline">6854516</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang -->
+  <section id="tentang" class="max-w-5xl mx-auto py-12 px-6">
+    <h2 class="text-2xl font-bold text-red-800 mb-4" data-id="Tentang Saya" data-en="About Me">Tentang Saya</h2>
+    <p class="leading-relaxed"
+       data-id="Saya adalah seorang akademisi dan peneliti dengan pengalaman di bidang teknologi informasi, manajemen, dan pendidikan. Saat ini menjabat sebagai Kepala LPTIK STIAB Jinarakkhita Lampung. Fokus penelitian saya mencakup Management Technology, Data Science, Digital Marketing, Artificial Intelligence, dan Sentimen Analysis."
+       data-en="I am an academic and researcher with experience in information technology, management, and education. Currently serving as Head of LPTIK at STIAB Jinarakkhita Lampung. My research focuses on Management Technology, Data Science, Digital Marketing, Artificial Intelligence, and Sentiment Analysis.">
+       Saya adalah seorang akademisi...
+    </p>
+  </section>
+
+  <!-- Pendidikan -->
+  <section id="pendidikan" class="max-w-5xl mx-auto py-12 px-6">
+    <h2 class="text-2xl font-bold text-red-800 mb-4" data-id="Pendidikan" data-en="Education">Pendidikan</h2>
+    <ul class="space-y-3">
+      <li data-id="S3 Doktor Manajemen Teknologi - ITS Surabaya (2024 – sekarang)" data-en="Doctorate in Technology Management - ITS Surabaya (2024 – present)">S3 Doktor Manajemen Teknologi - ITS Surabaya (2024 – sekarang)</li>
+      <li data-id="S2 Magister Teknik Informatika - IIB Darmajaya (2021 – 2023)" data-en="Master of Informatics Engineering - IIB Darmajaya (2021 – 2023)">S2 Magister Teknik Informatika - IIB Darmajaya (2021 – 2023)</li>
+      <li data-id="S1 Pendidikan Keagamaan Buddha - STIAB Jinarakkhita (2015 – 2019)" data-en="Bachelor of Buddhist Religious Education - STIAB Jinarakkhita (2015 – 2019)">S1 Pendidikan Keagamaan Buddha - STIAB Jinarakkhita (2015 – 2019)</li>
+    </ul>
+  </section>
+
+  <!-- Pengalaman -->
+  <section id="pengalaman" class="max-w-5xl mx-auto py-12 px-6">
+    <h2 class="text-2xl font-bold text-red-800 mb-4" data-id="Pengalaman Kerja & Organisasi" data-en="Work & Organizational Experience">Pengalaman Kerja & Organisasi</h2>
+    <ul class="space-y-3">
+      <li data-id="Dosen Tetap Prodi Bisnis & Manajemen Buddha - STIAB Jinarakkhita (2024 – sekarang)" data-en="Permanent Lecturer, Buddhist Business & Management Program - STIAB Jinarakkhita (2024 – present)">Dosen Tetap Prodi Bisnis & Manajemen Buddha - STIAB Jinarakkhita (2024 – sekarang)</li>
+      <li data-id="Kepala LPTIK - STIAB Jinarakkhita (2022 – sekarang)" data-en="Head of LPTIK - STIAB Jinarakkhita (2022 – present)">Kepala LPTIK - STIAB Jinarakkhita (2022 – sekarang)</li>
+      <li data-id="Ketua Pengurus Daerah Pemuda Buddhayana Indonesia (2021 – 2024)" data-en="Chairman, Young Buddhayana Indonesia Lampung (2021 – 2024)">Ketua Pengurus Daerah Pemuda Buddhayana Indonesia (2021 – 2024)</li>
+      <li data-id="Staf Biro Teknologi Informasi - STIAB Jinarakkhita (2020 – 2022)" data-en="Staff, IT Bureau - STIAB Jinarakkhita (2020 – 2022)">Staf Biro Teknologi Informasi - STIAB Jinarakkhita (2020 – 2022)</li>
+      <li data-id="Ketua BEM - STIAB Jinarakkhita (2017 – 2018)" data-en="President, Student Executive Board - STIAB Jinarakkhita (2017 – 2018)">Ketua BEM - STIAB Jinarakkhita (2017 – 2018)</li>
+    </ul>
+  </section>
+
+  <!-- Keahlian -->
+  <section id="keahlian" class="max-w-5xl mx-auto py-12 px-6">
+    <h2 class="text-2xl font-bold text-red-800 mb-4" data-id="Keahlian" data-en="Skills">Keahlian</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <span class="bg-red-100 text-red-700 px-4 py-2 rounded-lg text-center" data-id="Management Technology" data-en="Management Technology">Management Technology</span>
+      <span class="bg-red-100 text-red-700 px-4 py-2 rounded-lg text-center" data-id="Data Science" data-en="Data Science">Data Science</span>
+      <span class="bg-red-100 text-red-700 px-4 py-2 rounded-lg text-center" data-id="Digital Marketing" data-en="Digital Marketing">Digital Marketing</span>
+      <span class="bg-red-100 text-red-700 px-4 py-2 rounded-lg text-center" data-id="Artificial Intelligence" data-en="Artificial Intelligence">Artificial Intelligence</span>
+      <span class="bg-red-100 text-red-700 px-4 py-2 rounded-lg text-center" data-id="Sentimen Analysis" data-en="Sentiment Analysis">Sentimen Analysis</span>
+      <span class="bg-red-100 text-red-700 px-4 py-2 rounded-lg text-center" data-id="Leadership & Organisasi" data-en="Leadership & Organization">Leadership & Organisasi</span>
+    </div>
+  </section>
+
+  <!-- Penelitian -->
+  <section id="penelitian" class="max-w-5xl mx-auto py-12 px-6">
+    <h2 class="text-2xl font-bold text-red-800 mb-4" data-id="Penelitian & Publikasi" data-en="Research & Publications">Penelitian & Publikasi</h2>
+    <h3 class="font-semibold mt-4">2025</h3>
+    <ul class="list-disc ml-6 mt-2 text-gray-700">
+      <li data-id="Effect of Entrepreneurship Training on Entrepreneurship Readiness of Vocational Students" data-en="Effect of Entrepreneurship Training on Entrepreneurship Readiness of Vocational Students">Effect of Entrepreneurship Training...</li>
+      <li data-id="The Effect of Management Information System Implementation on Decision Making in Educational Institutions" data-en="The Effect of Management Information System Implementation on Decision Making in Educational Institutions">The Effect of Management Information System...</li>
+      <li data-id="The Relationship Between Creativity and Entrepreneurial Mindset Among Economics Faculty Students" data-en="The Relationship Between Creativity and Entrepreneurial Mindset Among Economics Faculty Students">The Relationship Between Creativity...</li>
+      <li data-id="Online Purchase Decisions and Brand Image Based on Shopee ad Effectiveness with Epic Model" data-en="Online Purchase Decisions and Brand Image Based on Shopee ad Effectiveness with Epic Model">Online Purchase Decisions...</li>
+      <li data-id="Membangun Kepemimpinan Berlandaskan Ajaran Buddha: Seminar Buddhayana Leadership untuk Generasi Muda Bangka Belitung" data-en="Building Leadership Based on Buddhist Teachings: Buddhayana Leadership Seminar for Bangka Belitung Youth">Membangun Kepemimpinan Berlandaskan Ajaran Buddha...</li>
+    </ul>
+    <h3 class="font-semibold mt-4">2024</h3>
+    <ul class="list-disc ml-6 mt-2 text-gray-700">
+      <li data-id="Developing an Effective Team Work: The Effect of Collaborative Learning Strategies" data-en="Developing an Effective Team Work: The Effect of Collaborative Learning Strategies">Developing an Effective Team Work...</li>
+      <li data-id="Education Development Perspective: The Influence of Family Environment on Motivation of Buddhist Youth" data-en="Education Development Perspective: The Influence of Family Environment on Motivation of Buddhist Youth">Education Development Perspective...</li>
+      <li data-id="How Does a Teacher's Multicultural Leadership Affect the Students' Moderation?" data-en="How Does a Teacher's Multicultural Leadership Affect the Students' Moderation?">How Does a Teacher's Multicultural...</li>
+      <li data-id="The Effect of Thina-middha on Emotional Intelligence of Buddhist Students" data-en="The Effect of Thina-middha on Emotional Intelligence of Buddhist Students">The Effect of Thina-middha...</li>
+      <li data-id="A Study of Mindful Leader and Educator on Conflict Management" data-en="A Study of Mindful Leader and Educator on Conflict Management">A Study of Mindful Leader...</li>
+      <li data-id="Improving Consumers Convenience and Satisfaction with Shopee Paylater Feature (TAM Analysis)" data-en="Improving Consumers Convenience and Satisfaction with Shopee Paylater Feature (TAM Analysis)">Improving Consumers Convenience...</li>
+    </ul>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="max-w-5xl mx-auto py-12 px-6">
+    <h2 class="text-2xl font-bold text-red-800 mb-4" data-id="Kontak" data-en="Contact">Kontak</h2>
+    <p><strong data-id="Alamat" data-en="Address">Alamat</strong>: <span data-id="Lampung Selatan, Indonesia" data-en="Lampung Selatan, Indonesia">Lampung Selatan, Indonesia</span></p>
+    <p><strong>Email</strong>: <a href="mailto:dedi-kundana@stiab-jinarakkhita.ac.id">dedi-kundana@stiab-jinarakkhita.ac.id</a></p>
+    <p><strong data-id="Telepon" data-en="Phone">Telepon</strong>: <span data-id="0821 860 860 14" data-en="+62 821 860 860 14">0821 860 860 14</span></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-12">
+    <div class="max-w-5xl mx-auto text-center">
+      <p data-id="© 2025 Dedi Kundana. Semua Hak Dilindungi." data-en="© 2025 Dedi Kundana. All Rights Reserved.">© 2025 Dedi Kundana. Semua Hak Dilindungi.</p>
+      <!-- Tombol Bahasa (dengan bendera visual) -->
+      <div class="flex justify-center gap-2 mt-4">
+        <button id="lang-id-footer" class="px-3 py-1 bg-white text-red-800 rounded hover:bg-gray-200 flex items-center gap-2">
+          <span class="fi fi-id"></span> ID
+        </button>
+        <button id="lang-en-footer" class="px-3 py-1 bg-white text-red-800 rounded hover:bg-gray-200 flex items-center gap-2">
+          <span class="fi fi-gb"></span> EN
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tombol Back to Top -->
+  <button id="backToTop" class="fixed bottom-6 right-6 bg-red-700 text-white p-3 rounded-full shadow-lg hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-red-400 transition-opacity duration-300 opacity-0 hidden">
+    <i data-lucide="chevron-up"></i>
+  </button>
+
+  <!-- Script -->
+  <script>
+    lucide.createIcons();
+
+    // Multi Bahasa
+    const langButtons = [
+      document.getElementById("lang-id-header"),
+      document.getElementById("lang-en-header"),
+      document.getElementById("lang-id-footer"),
+      document.getElementById("lang-en-footer")
+    ];
+    const elements = document.querySelectorAll("[data-id]");
+
+    function setLanguage(lang) {
+      elements.forEach(el => {
+        el.textContent = el.getAttribute(`data-${lang}`);
+      });
+      document.documentElement.lang = lang;
+      localStorage.setItem("preferredLang", lang);
+    }
+
+    langButtons.forEach(btn => {
+      if (!btn) return;
+      if (btn.id.includes("id")) {
+        btn.addEventListener("click", () => setLanguage("id"));
+      } else {
+        btn.addEventListener("click", () => setLanguage("en"));
+      }
+    });
+
+    window.addEventListener("DOMContentLoaded", () => {
+      const savedLang = localStorage.getItem("preferredLang");
+      if (savedLang) {
+        setLanguage(savedLang);
+      } else {
+        const userLang = navigator.language || navigator.userLanguage;
+        if (userLang.startsWith("en")) setLanguage("en");
+        else setLanguage("id");
+      }
+    });
+
+    // Back to Top
+    const backToTop = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.remove("hidden");
+        backToTop.classList.add("opacity-100");
+        backToTop.classList.remove("opacity-0");
+      } else {
+        backToTop.classList.add("opacity-0");
+        backToTop.classList.remove("opacity-100");
+        setTimeout(() => {
+          if (window.scrollY < 300) backToTop.classList.add("hidden");
+        }, 300);
+      }
+    });
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
